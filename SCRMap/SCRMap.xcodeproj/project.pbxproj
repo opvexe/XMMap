@@ -1,0 +1,804 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		311B497625324AD0A7D2D947 /* libPods-SCRMapTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EC3517BCA4769946D3E21923 /* libPods-SCRMapTests.a */; };
+		69FF3E08E846E20E983FF113 /* libPods-SCRMap.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E1BD63F45E93DD4C59013EB /* libPods-SCRMap.a */; };
+		7B2E14FC4D6D5FD852F23421 /* libPods-SCRMapUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 471CDF81A588BB996255699A /* libPods-SCRMapUITests.a */; };
+		D02780561FE3B4D600A55FA4 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = D02780551FE3B4D600A55FA4 /* AppDelegate.mm */; };
+		D02780591FE3B4D600A55FA4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D02780581FE3B4D600A55FA4 /* ViewController.m */; };
+		D027805C1FE3B4D600A55FA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D027805A1FE3B4D600A55FA4 /* Main.storyboard */; };
+		D027805E1FE3B4D600A55FA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D027805D1FE3B4D600A55FA4 /* Assets.xcassets */; };
+		D02780611FE3B4D600A55FA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D027805F1FE3B4D600A55FA4 /* LaunchScreen.storyboard */; };
+		D02780641FE3B4D600A55FA4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D02780631FE3B4D600A55FA4 /* main.m */; };
+		D027806E1FE3B4D600A55FA4 /* SCRMapTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D027806D1FE3B4D600A55FA4 /* SCRMapTests.m */; };
+		D02780791FE3B4D600A55FA4 /* SCRMapUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D02780781FE3B4D600A55FA4 /* SCRMapUITests.m */; };
+		D02780911FE3B4E200A55FA4 /* NYBAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = D02780891FE3B4E200A55FA4 /* NYBAnnotation.m */; };
+		D02780931FE3B4E200A55FA4 /* NYBMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D027808D1FE3B4E200A55FA4 /* NYBMapViewController.m */; };
+		D02780941FE3B4E200A55FA4 /* NYBCustomPinAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = D02780901FE3B4E200A55FA4 /* NYBCustomPinAnnotationView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D027806A1FE3B4D600A55FA4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D02780491FE3B4D600A55FA4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D02780501FE3B4D600A55FA4;
+			remoteInfo = SCRMap;
+		};
+		D02780751FE3B4D600A55FA4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D02780491FE3B4D600A55FA4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D02780501FE3B4D600A55FA4;
+			remoteInfo = SCRMap;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1B05CA581EC64E3DFE3B6B64 /* Pods-SCRMap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SCRMap.release.xcconfig"; path = "Pods/Target Support Files/Pods-SCRMap/Pods-SCRMap.release.xcconfig"; sourceTree = "<group>"; };
+		471CDF81A588BB996255699A /* libPods-SCRMapUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SCRMapUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DD2C472D2AEAF9BFAD616D1 /* Pods-SCRMap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SCRMap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SCRMap/Pods-SCRMap.debug.xcconfig"; sourceTree = "<group>"; };
+		77F5EE1E02255BD34D4B4777 /* Pods-SCRMapUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SCRMapUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SCRMapUITests/Pods-SCRMapUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9E1BD63F45E93DD4C59013EB /* libPods-SCRMap.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SCRMap.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8D1BC73B605FF1E815224F1 /* Pods-SCRMapTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SCRMapTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SCRMapTests/Pods-SCRMapTests.release.xcconfig"; sourceTree = "<group>"; };
+		BB6D2E062CF640732E64B0FC /* Pods-SCRMapUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SCRMapUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SCRMapUITests/Pods-SCRMapUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D02780511FE3B4D600A55FA4 /* SCRMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SCRMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D02780541FE3B4D600A55FA4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D02780551FE3B4D600A55FA4 /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
+		D02780571FE3B4D600A55FA4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D02780581FE3B4D600A55FA4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D027805B1FE3B4D600A55FA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D027805D1FE3B4D600A55FA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D02780601FE3B4D600A55FA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D02780621FE3B4D600A55FA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D02780631FE3B4D600A55FA4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D02780691FE3B4D600A55FA4 /* SCRMapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SCRMapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D027806D1FE3B4D600A55FA4 /* SCRMapTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCRMapTests.m; sourceTree = "<group>"; };
+		D027806F1FE3B4D600A55FA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D02780741FE3B4D600A55FA4 /* SCRMapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SCRMapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D02780781FE3B4D600A55FA4 /* SCRMapUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCRMapUITests.m; sourceTree = "<group>"; };
+		D027807A1FE3B4D600A55FA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D02780881FE3B4E200A55FA4 /* NYBAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYBAnnotation.h; sourceTree = "<group>"; };
+		D02780891FE3B4E200A55FA4 /* NYBAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYBAnnotation.m; sourceTree = "<group>"; };
+		D027808C1FE3B4E200A55FA4 /* NYBMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYBMapViewController.h; sourceTree = "<group>"; };
+		D027808D1FE3B4E200A55FA4 /* NYBMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYBMapViewController.m; sourceTree = "<group>"; };
+		D027808F1FE3B4E200A55FA4 /* NYBCustomPinAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYBCustomPinAnnotationView.h; sourceTree = "<group>"; };
+		D02780901FE3B4E200A55FA4 /* NYBCustomPinAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYBCustomPinAnnotationView.m; sourceTree = "<group>"; };
+		D08E0DDA1FE3B5A700B03B2F /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		EC3517BCA4769946D3E21923 /* libPods-SCRMapTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SCRMapTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC1B5DAE6E7C8A46753B7152 /* Pods-SCRMapTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SCRMapTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SCRMapTests/Pods-SCRMapTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D027804E1FE3B4D600A55FA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69FF3E08E846E20E983FF113 /* libPods-SCRMap.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D02780661FE3B4D600A55FA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				311B497625324AD0A7D2D947 /* libPods-SCRMapTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D02780711FE3B4D600A55FA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B2E14FC4D6D5FD852F23421 /* libPods-SCRMapUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		717C8A429EF77D934EC00ECD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9E1BD63F45E93DD4C59013EB /* libPods-SCRMap.a */,
+				EC3517BCA4769946D3E21923 /* libPods-SCRMapTests.a */,
+				471CDF81A588BB996255699A /* libPods-SCRMapUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A0BC724BDFEC125D62ECEAE4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6DD2C472D2AEAF9BFAD616D1 /* Pods-SCRMap.debug.xcconfig */,
+				1B05CA581EC64E3DFE3B6B64 /* Pods-SCRMap.release.xcconfig */,
+				FC1B5DAE6E7C8A46753B7152 /* Pods-SCRMapTests.debug.xcconfig */,
+				A8D1BC73B605FF1E815224F1 /* Pods-SCRMapTests.release.xcconfig */,
+				77F5EE1E02255BD34D4B4777 /* Pods-SCRMapUITests.debug.xcconfig */,
+				BB6D2E062CF640732E64B0FC /* Pods-SCRMapUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D02780481FE3B4D600A55FA4 = {
+			isa = PBXGroup;
+			children = (
+				D02780861FE3B4E200A55FA4 /* Map */,
+				D02780531FE3B4D600A55FA4 /* SCRMap */,
+				D027806C1FE3B4D600A55FA4 /* SCRMapTests */,
+				D02780771FE3B4D600A55FA4 /* SCRMapUITests */,
+				D02780521FE3B4D600A55FA4 /* Products */,
+				A0BC724BDFEC125D62ECEAE4 /* Pods */,
+				717C8A429EF77D934EC00ECD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D02780521FE3B4D600A55FA4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D02780511FE3B4D600A55FA4 /* SCRMap.app */,
+				D02780691FE3B4D600A55FA4 /* SCRMapTests.xctest */,
+				D02780741FE3B4D600A55FA4 /* SCRMapUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D02780531FE3B4D600A55FA4 /* SCRMap */ = {
+			isa = PBXGroup;
+			children = (
+				D08E0DDA1FE3B5A700B03B2F /* PrefixHeader.pch */,
+				D02780541FE3B4D600A55FA4 /* AppDelegate.h */,
+				D02780551FE3B4D600A55FA4 /* AppDelegate.mm */,
+				D02780571FE3B4D600A55FA4 /* ViewController.h */,
+				D02780581FE3B4D600A55FA4 /* ViewController.m */,
+				D027805A1FE3B4D600A55FA4 /* Main.storyboard */,
+				D027805D1FE3B4D600A55FA4 /* Assets.xcassets */,
+				D027805F1FE3B4D600A55FA4 /* LaunchScreen.storyboard */,
+				D02780621FE3B4D600A55FA4 /* Info.plist */,
+				D02780631FE3B4D600A55FA4 /* main.m */,
+			);
+			path = SCRMap;
+			sourceTree = "<group>";
+		};
+		D027806C1FE3B4D600A55FA4 /* SCRMapTests */ = {
+			isa = PBXGroup;
+			children = (
+				D027806D1FE3B4D600A55FA4 /* SCRMapTests.m */,
+				D027806F1FE3B4D600A55FA4 /* Info.plist */,
+			);
+			path = SCRMapTests;
+			sourceTree = "<group>";
+		};
+		D02780771FE3B4D600A55FA4 /* SCRMapUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D02780781FE3B4D600A55FA4 /* SCRMapUITests.m */,
+				D027807A1FE3B4D600A55FA4 /* Info.plist */,
+			);
+			path = SCRMapUITests;
+			sourceTree = "<group>";
+		};
+		D02780861FE3B4E200A55FA4 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				D02780871FE3B4E200A55FA4 /* Model */,
+				D027808C1FE3B4E200A55FA4 /* NYBMapViewController.h */,
+				D027808D1FE3B4E200A55FA4 /* NYBMapViewController.m */,
+				D027808E1FE3B4E200A55FA4 /* View */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		D02780871FE3B4E200A55FA4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D02780881FE3B4E200A55FA4 /* NYBAnnotation.h */,
+				D02780891FE3B4E200A55FA4 /* NYBAnnotation.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D027808E1FE3B4E200A55FA4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D027808F1FE3B4E200A55FA4 /* NYBCustomPinAnnotationView.h */,
+				D02780901FE3B4E200A55FA4 /* NYBCustomPinAnnotationView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D02780501FE3B4D600A55FA4 /* SCRMap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D027807D1FE3B4D600A55FA4 /* Build configuration list for PBXNativeTarget "SCRMap" */;
+			buildPhases = (
+				430B4426D86D97F05D4B340B /* [CP] Check Pods Manifest.lock */,
+				D027804D1FE3B4D600A55FA4 /* Sources */,
+				D027804E1FE3B4D600A55FA4 /* Frameworks */,
+				D027804F1FE3B4D600A55FA4 /* Resources */,
+				2EE5F157654A443B0AE80CF8 /* [CP] Embed Pods Frameworks */,
+				E6A126379E9E028A522E836E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SCRMap;
+			productName = SCRMap;
+			productReference = D02780511FE3B4D600A55FA4 /* SCRMap.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D02780681FE3B4D600A55FA4 /* SCRMapTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D02780801FE3B4D600A55FA4 /* Build configuration list for PBXNativeTarget "SCRMapTests" */;
+			buildPhases = (
+				5E07EC781192E8BA2A681585 /* [CP] Check Pods Manifest.lock */,
+				D02780651FE3B4D600A55FA4 /* Sources */,
+				D02780661FE3B4D600A55FA4 /* Frameworks */,
+				D02780671FE3B4D600A55FA4 /* Resources */,
+				690803C5BAED9ABC9BDEA734 /* [CP] Embed Pods Frameworks */,
+				1C10E0722E8A0B442931B883 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D027806B1FE3B4D600A55FA4 /* PBXTargetDependency */,
+			);
+			name = SCRMapTests;
+			productName = SCRMapTests;
+			productReference = D02780691FE3B4D600A55FA4 /* SCRMapTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D02780731FE3B4D600A55FA4 /* SCRMapUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D02780831FE3B4D600A55FA4 /* Build configuration list for PBXNativeTarget "SCRMapUITests" */;
+			buildPhases = (
+				AEC9E8E6119FC04F0B9879D7 /* [CP] Check Pods Manifest.lock */,
+				D02780701FE3B4D600A55FA4 /* Sources */,
+				D02780711FE3B4D600A55FA4 /* Frameworks */,
+				D02780721FE3B4D600A55FA4 /* Resources */,
+				5B5113DA95C26E9702A4E412 /* [CP] Embed Pods Frameworks */,
+				0CDFAD59EDF0FE74464D342E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D02780761FE3B4D600A55FA4 /* PBXTargetDependency */,
+			);
+			name = SCRMapUITests;
+			productName = SCRMapUITests;
+			productReference = D02780741FE3B4D600A55FA4 /* SCRMapUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D02780491FE3B4D600A55FA4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = Facebook;
+				TargetAttributes = {
+					D02780501FE3B4D600A55FA4 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					D02780681FE3B4D600A55FA4 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D02780501FE3B4D600A55FA4;
+					};
+					D02780731FE3B4D600A55FA4 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D02780501FE3B4D600A55FA4;
+					};
+				};
+			};
+			buildConfigurationList = D027804C1FE3B4D600A55FA4 /* Build configuration list for PBXProject "SCRMap" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D02780481FE3B4D600A55FA4;
+			productRefGroup = D02780521FE3B4D600A55FA4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D02780501FE3B4D600A55FA4 /* SCRMap */,
+				D02780681FE3B4D600A55FA4 /* SCRMapTests */,
+				D02780731FE3B4D600A55FA4 /* SCRMapUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D027804F1FE3B4D600A55FA4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D02780611FE3B4D600A55FA4 /* LaunchScreen.storyboard in Resources */,
+				D027805E1FE3B4D600A55FA4 /* Assets.xcassets in Resources */,
+				D027805C1FE3B4D600A55FA4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D02780671FE3B4D600A55FA4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D02780721FE3B4D600A55FA4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0CDFAD59EDF0FE74464D342E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SCRMapUITests/Pods-SCRMapUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1C10E0722E8A0B442931B883 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SCRMapTests/Pods-SCRMapTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2EE5F157654A443B0AE80CF8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SCRMap/Pods-SCRMap-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		430B4426D86D97F05D4B340B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SCRMap-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5B5113DA95C26E9702A4E412 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SCRMapUITests/Pods-SCRMapUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E07EC781192E8BA2A681585 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SCRMapTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		690803C5BAED9ABC9BDEA734 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SCRMapTests/Pods-SCRMapTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AEC9E8E6119FC04F0B9879D7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SCRMapUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E6A126379E9E028A522E836E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SCRMap/Pods-SCRMap-resources.sh",
+				"${PODS_ROOT}/BaiduMapKit/BaiduMapKit/BaiduMapAPI_Map.framework/Resources/mapapi.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SCRMap/Pods-SCRMap-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D027804D1FE3B4D600A55FA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D02780941FE3B4E200A55FA4 /* NYBCustomPinAnnotationView.m in Sources */,
+				D02780591FE3B4D600A55FA4 /* ViewController.m in Sources */,
+				D02780641FE3B4D600A55FA4 /* main.m in Sources */,
+				D02780911FE3B4E200A55FA4 /* NYBAnnotation.m in Sources */,
+				D02780561FE3B4D600A55FA4 /* AppDelegate.mm in Sources */,
+				D02780931FE3B4E200A55FA4 /* NYBMapViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D02780651FE3B4D600A55FA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D027806E1FE3B4D600A55FA4 /* SCRMapTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D02780701FE3B4D600A55FA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D02780791FE3B4D600A55FA4 /* SCRMapUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D027806B1FE3B4D600A55FA4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D02780501FE3B4D600A55FA4 /* SCRMap */;
+			targetProxy = D027806A1FE3B4D600A55FA4 /* PBXContainerItemProxy */;
+		};
+		D02780761FE3B4D600A55FA4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D02780501FE3B4D600A55FA4 /* SCRMap */;
+			targetProxy = D02780751FE3B4D600A55FA4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D027805A1FE3B4D600A55FA4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D027805B1FE3B4D600A55FA4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D027805F1FE3B4D600A55FA4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D02780601FE3B4D600A55FA4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D027807B1FE3B4D600A55FA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D027807C1FE3B4D600A55FA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D027807E1FE3B4D600A55FA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DD2C472D2AEAF9BFAD616D1 /* Pods-SCRMap.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3NJC3EGBWR;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SCRMap/PrefixHeader.pch";
+				INFOPLIST_FILE = SCRMap/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shumin.cn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D027807F1FE3B4D600A55FA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B05CA581EC64E3DFE3B6B64 /* Pods-SCRMap.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3NJC3EGBWR;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SCRMap/PrefixHeader.pch";
+				INFOPLIST_FILE = SCRMap/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shumin.cn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D02780811FE3B4D600A55FA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC1B5DAE6E7C8A46753B7152 /* Pods-SCRMapTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SCRMapTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Facebook.SCRMapTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SCRMap.app/SCRMap";
+			};
+			name = Debug;
+		};
+		D02780821FE3B4D600A55FA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8D1BC73B605FF1E815224F1 /* Pods-SCRMapTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SCRMapTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Facebook.SCRMapTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SCRMap.app/SCRMap";
+			};
+			name = Release;
+		};
+		D02780841FE3B4D600A55FA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77F5EE1E02255BD34D4B4777 /* Pods-SCRMapUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SCRMapUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Facebook.SCRMapUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SCRMap;
+			};
+			name = Debug;
+		};
+		D02780851FE3B4D600A55FA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB6D2E062CF640732E64B0FC /* Pods-SCRMapUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SCRMapUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Facebook.SCRMapUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SCRMap;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D027804C1FE3B4D600A55FA4 /* Build configuration list for PBXProject "SCRMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D027807B1FE3B4D600A55FA4 /* Debug */,
+				D027807C1FE3B4D600A55FA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D027807D1FE3B4D600A55FA4 /* Build configuration list for PBXNativeTarget "SCRMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D027807E1FE3B4D600A55FA4 /* Debug */,
+				D027807F1FE3B4D600A55FA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D02780801FE3B4D600A55FA4 /* Build configuration list for PBXNativeTarget "SCRMapTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D02780811FE3B4D600A55FA4 /* Debug */,
+				D02780821FE3B4D600A55FA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D02780831FE3B4D600A55FA4 /* Build configuration list for PBXNativeTarget "SCRMapUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D02780841FE3B4D600A55FA4 /* Debug */,
+				D02780851FE3B4D600A55FA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D02780491FE3B4D600A55FA4 /* Project object */;
+}
